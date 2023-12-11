@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+  
+
+  
+
+nav
+{
+    background: black
+    ;
+    height: 80px
+    width 100%;
+}
+footer
+{
+background-color: #626267;
+color: #fdfff7;
+text-align: center;
+padding: 20px;
+position: absolute;
+bottom: 0;
+width: 100%;
+
+}
+.pro-pic
+{
+width: 50%;
+height: auto;
+display: block;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li
+{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+
+}
+nav ul li a
+{
+color: #fdfff7;
+font-size: 16px;
+text-transform: uppercase;
+padding: 7px 13px;
+border-radius: 3px; ;
+}
+label.logo
+{
+color:#ee7202 ;
+font-size: 24px; 
+line-height: 80px;
+padding: 0 50px;
+font-weight: bold;
+outline-color: black;
+
+
+}
+
+
+
+a.active,a:hover
+{
+background: #ee7202;
+transition: .5;
+
+}
+
+@media(max-width: 952px)
+{
+    label.logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    nav ul li a
+    {
+        font-size:10px ;
+    }
+}
+@media(max-width: 858px)
+{
+     ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+      
+
+
+    }
+    nav ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a
+    {
+        font-size: 20px;
+    }
+    a:hover,a.active
+    {
+        background: none;
+        color: #ee7202;
+    }
+}
+
+
+
+
+
+    
+

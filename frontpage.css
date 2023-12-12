@@ -37,6 +37,7 @@ width: 100%;
 width: 50%;
 height: auto;
 display: block;
+float: left;
 }
 
 nav ul
@@ -123,6 +124,33 @@ transition: .5;
         background: none;
         color: #ee7202;
     }
+    .pro-pic
+    {
+        float: right;
+
+    }
+}
+.product-galleri
+{
+display: grid;
+grid-template-columns: repeat(3, 2fr);
+grid-template-rows: repeat(3,auto);
+max-width: 50rem;
+margin-inline: auto;
+}
+.product-galleri > img
+{
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+transition: 
+scale 300ms ease,
+opacity 350ms linear ;
+}
+.product-galleri > img:not(:hover)
+{
+scale: .8;
+opacity: .7;
 }
 
 

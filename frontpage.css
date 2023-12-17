@@ -110,7 +110,8 @@ color: #ee7202;
 {
 font-size: 101.65px;
 font-weight: bold;
-color: #ee7202;   
+color: #ee7202;
+max-width: 600px;   
 }
 
 
@@ -134,7 +135,7 @@ transition:
 scale 300ms ease,
 opacity 350ms linear ;
 }
-#products .product-galleri:has(img:hover) > img:not(:hover)
+#products .product-galleri > img:not(:hover)
 {
 scale: .8;
 opacity: .7;
@@ -155,7 +156,6 @@ max-width:600px;
 {
     width: 50%;
 display: flex;
-float: center;
 margin-top: -100px;
 max-height: fit-content;
 overflow: hidden;
@@ -186,7 +186,6 @@ color: #ee7202;
   color: #fdfff7;
   line-height: 1.5;
   margin-bottom: 10px;
-  padding: auto;
   max-width: 500px;
   
 }
@@ -236,7 +235,7 @@ margin-top: auto;
 a.active,a:hover
 {
 background: #ee7202;
-transition: .5;
+
 
 }
 /* this is for half a screen
@@ -306,8 +305,7 @@ color: #ee7202;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        float: center;
-
+       
     }
     ul
     {

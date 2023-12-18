@@ -45,18 +45,30 @@ text-transform: uppercase;
 padding: 10px 20px;
 border-radius: 3px;
 }
+a.active,a:hover
+{
+background: #ee7202;
+
+
+}
 label.logo
 {
     display:flex;
     max-width: 800px;
     padding: 20px;
+    height: auto;
+    
+
+    
+    
    
 }
 label.logo img 
 {
 height: auto;
-width: 100%;
-max-width: 800px;
+width: 200px;
+
+
 }
 .home-container
 {
@@ -71,7 +83,7 @@ max-width: 800px;
 width: 50%;
 display: flex;
 float: left;
-margin-top: -100px;
+margin-top: 100px;
 max-height: fit-content;
 overflow: hidden;
 }
@@ -95,23 +107,23 @@ margin-top: 30px;
 .headline-small
 {
 
-font-size: 38.83px;
+font-size: 23.99px;
 font-weight: bold;
 color: #ee7202;   
 }
 .headline-medium
 {
 margin-top: 200px;
-font-size: 62.83px;
+font-size: 38.83px;
 font-weight: bold;
 color: #ee7202;   
 }
 .headline-large
 {
-font-size: 101.65px;
+font-size: 62.83px;
 font-weight: bold;
 color: #ee7202;
-max-width: 600px;   
+max-width: 400px;   
 }
 
 
@@ -137,7 +149,6 @@ opacity 350ms linear ;
 }
 #products .product-galleri > img:not(:hover)
 {
-scale: .8;
 opacity: .7;
 }
 .arrow
@@ -297,30 +308,28 @@ color: #ee7202;
 /* phone size */
  @media(max-width: 1300px)
 {
-    label.logo
+  
+    label.logo 
     {
-        position: absolute;
-        top: 20px;
+        position: relative;
         
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 140px;
+        margin-left: 50px;
        
     }
     ul
     {
-        position: relative;
-        
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         align-content: space-around;
-        
-
         width: 100%;
-       height: 100vh;
-       
+       height: 50vh;
       text-align: center;
       
     
@@ -349,11 +358,12 @@ color: #ee7202;
     }
     .pro-pic
     {
+    position: relative;
     width: 50%;
     height: auto;
     display: flex;
     float: left;
-    margin: 180px 20px 100px;
+    margin: 160px 20px 10px;
     
     }
     .headline-small
@@ -422,6 +432,7 @@ margin-right: 20px;
 
     .home-container
     {
+        flex-direction: column;
         display: flex;
         align-items: center;
         text-align: left;
